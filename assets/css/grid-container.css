@@ -19,6 +19,12 @@ section {
   display: grid;
   gap: 17px;
   box-shadow: 2px 2px 2px var(--light-gray);
+  transition: transform 0.3s;
+}
+
+section:hover {
+  transform: scale(1.03);
+  opacity: 0.98;
 }
 
 .profile {
@@ -124,6 +130,22 @@ section {
   background: var(--dark-blackish);
 }
 
+.challenge {
+  justify-self: center;
+  transform: translateY(54px);
+  font-size: 1.3rem;
+  color: var(--dark-graysh);
+}
+
+.challenge a {
+  color: var(--dark-blackish);
+  transition: color 0.4s;
+}
+
+.challenge a:hover {
+  color: var(--moderate-violet);
+}
+
 @media (max-width: 1110px) {
   main {
     height: auto;
@@ -148,5 +170,10 @@ section {
 
   #grid-section1::after {
     right: 30px;
+  }
+
+  .challenge {
+    transform: translateY(0px);
+    padding-bottom: 15px;
   }
 }
