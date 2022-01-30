@@ -123,3 +123,30 @@ section {
   grid-column: 2 / 4;
   background: var(--dark-blackish);
 }
+
+@media (max-width: 1110px) {
+  main {
+    height: auto;
+  }
+
+  #grid-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  #grid-section1,
+  #grid-section2,
+  #grid-section3,
+  #grid-section4,
+  #grid-section5 {
+    grid-column: 1;
+  }
+
+  #grid-section3 {
+    grid-row: 5;
+  }
+
+  #grid-section1::after {
+    right: 30px;
+  }
+}
